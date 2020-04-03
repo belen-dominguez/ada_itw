@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Libre Franklin', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+ text-align: center;
+}
+/* LOGO */
+.site-logo {
+   margin-top: 50px;
+}
+/* TITULOS */
+.site-title {
+  margin-top: 50px;
+  color:  hsl(0, 0%, 59%);
+  font-weight: 300;
+  font-size: 45px;
+}
+.site-title > span {
+  color: #000;
+  font-weight: 600;
+}
+.site-subtitle {
+  margin-top: 15px;
+  color:  hsl(0, 1%, 39%);
+  font-weight: 300;
+}
+/* FORMULARIO */
+.site-form {
+  margin-top: 25px;
+}
+.site-form > input {
+  width: 300px;
+  height: 40px;
+  padding: 0 10px;
+  margin-right: 10px;
+  color: hsl(223, 87%, 63%);
+  border: 1px solid hsl(223, 87%, 63%);
+  border-radius: 20px;
+  
+}
+.site-btn {
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  color: #fff;
+  font-weight: 600;
+  background-color: hsl(223, 87%, 63%);
+  border: 1px solid hsl(223, 87%, 63%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 17px 0px hsl(223, 87%, 63%);
+
+
+}
+
+/* IMAGEN */
+.site-img {
+  margin-top: 50px;
+  max-width: 500px;
+
+}
+
+/* REDES SOCIALES */
+.site-social {
+  margin-top: 50px;
+}
+.site-social > a > i {
+  cursor: pointer;
+  color: hsl(223, 87%, 63%);
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #808080;
+  border-radius: 50%;
+}
+.fa-facebook-f {
+  padding: 15px 20px !important;
+}
+
+.site-social > a > i:hover {
+  background-color:  hsl(223, 87%, 63%);
+  color: #fff
+}
+
+/* COPYRIGHT */
+.site-copyright {
+  margin: 20px 0 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
