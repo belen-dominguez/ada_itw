@@ -77,12 +77,13 @@ img {
   cursor: pointer;
   color: hsl(223, 87%, 63%);
   margin: 10px;
-  padding: 15px;
-  border: 1px solid #808080;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 50%;
 }
 .fa-facebook-f {
-  padding: 15px 20px !important;
+  padding: 10px 15px !important;
 }
 
 .site-social > a > i:hover {
@@ -93,8 +94,12 @@ img {
 /* COPYRIGHT */
 .site-copyright {
   margin: 20px 0 30px;
+  font-size: 11px;
+  color: hsl(0, 0%, 59%);
 }
 
+
+/* FOOTER */ 
 .attribution {
   font-size: 11px;
   text-align: center;
