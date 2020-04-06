@@ -50,8 +50,9 @@ img {
 }
 .site-btn {
   cursor: pointer;
-  width: 170px;
-  height: 40px;
+  /* width: 170px; para los botones es mejor usar padding y no wiodth, por si tenes que agregar mas texto, que no se descajete el boton */
+  /* height: 40px; */
+  padding: 12px 50px;
   color: #fff;
   font-weight: 600;
   background-color: hsl(223, 87%, 63%);
@@ -65,7 +66,8 @@ img {
 /* IMAGEN */
 .site-img {
   margin-top: 50px;
-  max-width: 500px;
+  /* max-width: 500px; */
+  width: 45%;
 
 }
 
@@ -79,7 +81,7 @@ img {
   margin: 10px;
   padding: 10px;
   font-size: 15px;
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid  hsla(223, 87%, 63%, 0.5);
   border-radius: 50%;
 }
 .fa-facebook-f {
