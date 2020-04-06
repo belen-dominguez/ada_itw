@@ -2,5 +2,119 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    background-color: hsl(255,82,70);
+    background-color: rgb(147, 116, 241);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.container {
+    width: 1200px;
+    margin: 10px auto;
+    background-color:#fff;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.navbar {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN SECTION LEFT */
+.left {
+    flex-basis: calc(50% - 50px);
+    background-color: rgb(231, 228, 228);
+    border: 1px solid grey;
+    padding: 25px;
+}
+input, select {
+    margin: 10px 10px 10px 0;
+    width: 85%;
+    padding: 10px;
+    display: block;
+}
+label {
+    display: inline-block;
+    width: 48%;
+}
+select {
+    width: 95%;
+}
+
+label[id="email"], label[id="tel"], label[id="address"]{
+   width: 100%;
+}
+input[type="email"], input[type="tel"], input[type="address"]{
+    width: 90%;
+ }
+ 
+/* MAIN SECTION  RIGHT */
+.right {
+    flex-basis: calc(50% - 50px);
+}
+.delivery {
+    background-color: rgb(231, 228, 228);
+    border: 1px solid grey;
+    padding: 25px;
+    height: 60%;
+}
+.delivery > label {
+    width: 100%;
+}
+
+.delivery-info  {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.btn {
+    flex-basis: 50%;
+    margin: 15px;
+    padding: 30px;
+    border: 1px solid grey;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.wht {
+    color: rgb(147, 116, 241);
+}
+.ppl {
+    background-color: rgb(147, 116, 241);
+    color: white;
+}
+
+.btn > span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.right > label > input {
+    display: inline-block;
+    width: 10px;
+    margin: 10px;
+}
+
+.btn-sbmt {
+    margin-top: 10px;
+    padding: 30px 0;
+    background-color: rgb(147, 116, 241);
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
 }

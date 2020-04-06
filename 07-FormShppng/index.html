@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Shppng</title>
+    <script src="https://kit.fontawesome.com/a9410861d7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="navbar">
+            <img src="./img/logo.png" alt="">
+            <p>Checkout</p>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <form action="">
+            <div class="info">
+                <div class="left">
+                    <h2>Personal Information</h2>
+                    
+                        <label for=""> Firts Name
+                            <input type="text">
+                        </label>
+                        <label for=""> Last Name
+                            <input type="text">
+                        </label>
+                        <label for="" id="email"> Email address
+                            <input type="email">
+                        </label>
+                        <br>
+                        <label for="" id="address"> Street
+                            <input type="address" >
+                        </label>
+                        <br>
+                        <label for=""> City
+                            <input type="text">
+                        </label>
+                        <label for="" > Firts Name
+                        <select name="" id="">
+                            <option value="Francia">Francia</option>
+                            <option value="Argentina">Argentina</option>
+                        </select>
+                        </label>
+                        <br>
+                        <label for="" id="tel"> Phone Numer
+                            <input type="tel" name="" id="">
+                        </label>
+                    
+                </div>
+                <div class="right">
+                    <div class="delivery">
+                        <h2>Delivery</h2>
+                        <label for=""> Delivery fee 
+                            <div class="delivery-info">
+                                <button class="btn wht">
+                                    <span>0<sup>$</sup> </span><br>
+                                    3-4 weeks
+                                </button>
+                                <button class="btn ppl">
+                                    <span>5<sup>$</sup> </span> <br>
+                                    2-5 days
+                                </button>
+                            </div>
+                        </label>
+                        <p>Estimated delivery date: <span>Agust 4th</span> </p>
+                        <p>Every package has a tracking number</p>
+                        
+                    </div>
+                    <label for=""> 
+                        <input type="checkbox" name="" id="">
+                        Suscribe to newsletter
+                    </label> <br>
+                    <label for=""> 
+                        <input type="checkbox" name="" id="">
+                        Create an account
+                    </label>
+                    <button class="btn-sbmt" type="submit"> Confirm my order</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
