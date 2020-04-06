@@ -60,6 +60,9 @@ img {
 .description h1 {
     color: grey;
 }
+.description h4 {
+    margin-bottom: 0;
+}
 
 .dates p {
     display: inline-block;
