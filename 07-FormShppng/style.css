@@ -5,6 +5,7 @@ body {
     background-color: rgb(147, 116, 241);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
+    color: grey;
 }
 h2 {
     text-align: center;
@@ -20,10 +21,25 @@ h2 {
 }
 
 .navbar {
-    padding: 50px 50px;
+    padding: 50px 50px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 25px;
+}
+.logo {
+    width: 150px;
+}
+.navbar > p {
+    color: lightgray;
+}
+.navbar > p > span, .navbar > i {
+    color: rgb(147, 116, 241);
+    font-weight: 700;
+}
+.navbar > p > i, .navbar > p > span > i  {
+    vertical-align: middle;
+    margin: 0 15px;
 }
 
 .info {
@@ -44,6 +60,7 @@ input, select {
     width: 85%;
     padding: 10px;
     display: block;
+    color: rgb(147, 116, 241);
 }
 label {
     display: inline-block;
@@ -59,16 +76,18 @@ label[id="email"], label[id="tel"], label[id="address"]{
 input[type="email"], input[type="tel"], input[type="address"]{
     width: 90%;
  }
- 
+
+
 /* MAIN SECTION  RIGHT */
 .right {
     flex-basis: calc(50% - 50px);
+    height: 100%;
 }
 .delivery {
     background-color: rgb(231, 228, 228);
     border: 1px solid grey;
     padding: 25px;
-    height: 60%;
+    /* height: 50%; */
 }
 .delivery > label {
     width: 100%;
@@ -82,7 +101,7 @@ input[type="email"], input[type="tel"], input[type="address"]{
 .btn {
     flex-basis: 50%;
     margin: 15px;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid grey;
     font-size: 20px;
     text-align: center;
@@ -102,11 +121,22 @@ input[type="email"], input[type="tel"], input[type="address"]{
     font-weight: 600;
 }
 
-.right > label > input {
+.delivery > p {
+    margin: 0 auto;
+}
+.delivery > p > span {
+    font-weight: 700;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+.checkbox > label > input {
     display: inline-block;
     width: 10px;
     margin: 10px;
 }
+
 
 .btn-sbmt {
     margin-top: 10px;

@@ -11,8 +11,9 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="./img/logo.png" alt="">
-            <p>Checkout</p>
+            <img class="logo" src="./img/logo.png" alt="">
+            <p>Shopping Bag <i class="fas fa-caret-right"></i>
+                 <span>Checkout <i class="fas fa-caret-right"></i></span>  Confirmation </p>
             <i class="fas fa-shopping-cart"></i>
         </div>
         <form action="">
@@ -45,7 +46,7 @@
                         </label>
                         <br>
                         <label for="" id="tel"> Phone Numer
-                            <input type="tel" name="" id="">
+                            <input type="tel" name="" id="" placeholder="+33">
                         </label>
                     
                 </div>
@@ -68,14 +69,16 @@
                         <p>Every package has a tracking number</p>
                         
                     </div>
-                    <label for=""> 
-                        <input type="checkbox" name="" id="">
-                        Suscribe to newsletter
-                    </label> <br>
-                    <label for=""> 
-                        <input type="checkbox" name="" id="">
-                        Create an account
-                    </label>
+                    <div class="checkbox">
+                        <label for=""> 
+                            <input type="checkbox" name="" id="">
+                            Suscribe to newsletter
+                        </label> <br>
+                        <label for=""> 
+                            <input type="checkbox" name="" id="">
+                            Create an account
+                        </label>
+                    </div>
                     <button class="btn-sbmt" type="submit"> Confirm my order</button>
                 </div>
             </div>
