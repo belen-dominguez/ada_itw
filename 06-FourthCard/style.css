@@ -1,5 +1,6 @@
 body {
     /* width: 500px; */
+    box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     background-color: lightseagreen;
