@@ -30,6 +30,9 @@ img {
 a {
     text-decoration: none;
 }
+ul > li {
+    list-style: none;
+}
 
 .flex {
     margin-bottom: 50px;
@@ -43,6 +46,12 @@ a {
     margin: 5px;
     border-radius: 5px;
     border: none;
+}
+.input {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+    
 }
 
 
@@ -60,13 +69,11 @@ nav {
 .cta-main {
     margin-bottom: 100px;
 }
+.cta-main_left {
+    flex-basis: 50%;
+}
 h1 {
     font-size: 40px;
-}
-.cta-main_left > form > input {
-    width: 50%;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 /* SECTION */
@@ -86,4 +93,16 @@ h1 {
     background-color: var(--grey-blue);
     padding: 20px 50px;
     color: #fff;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.cta-bottom_left {
+    flex-basis: 40%;
+}
+.cta-bottom_right {
+    flex-basis: 40%;
+}
+.it-cta2 {
+    width: 90%;
+    margin-bottom: 20px;
 }
