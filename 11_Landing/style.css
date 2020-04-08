@@ -13,9 +13,15 @@
 /* GENERALES */
 body {
     font-family: 'Open Sans', sans-serif;
+    
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* background-color: lightcoral; */
+}
+
+.container {
     width: 1440px;
     margin: 0 auto;
-    /* background-color: lightcoral; */
 }
 h1, h2 {
     font-family: 'Raleway', sans-serif;
@@ -95,6 +101,7 @@ h1 {
     color: #fff;
     justify-content: space-around;
     padding: 50px 0;
+    margin-bottom: 0;
 }
 .cta-bottom_left {
     flex-basis: 40%;
@@ -105,4 +112,26 @@ h1 {
 .it-cta2 {
     width: 90%;
     margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-blue);
+    padding: 100px;
+    margin-bottom: 0 !important;
+    justify-content: space-around;
+}
+.col, .col a {
+    font-family: ;'Open Sans', sans-serif;
+    color: #fff;
+}
+.col i {
+    margin: 15px;
+}
+.col1 > img {
+    filter: contrast(1%) brightness(100%);
+    margin-bottom: 20px;
+}
+.col1 > i {
+    display: block;
 }
