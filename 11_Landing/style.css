@@ -87,6 +87,7 @@ h1 {
     background-image: url(./images/bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-position-y: top;
+    background-size: cover;
     height: 100px;
 }
 .section-main {
