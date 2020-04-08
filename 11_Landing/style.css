@@ -114,6 +114,47 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* SECTION */
+.section-main > .flex {
+    align-items: flex-start;
+}
+.section-main_left {
+    flex-basis: 50%;
+}
+.section-main_left > a {
+    text-decoration: underline;
+    color: var(--cyan);
+    font-size: 20px;
+}
+.section-main_left > a::after {
+    content: "\21DB" ;
+    margin-left: 2px;
+}
+
+blockquote {
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    padding: 30px;
+    text-align: left;
+    margin-top: 50px;
+}
+blockquote > img {
+    width: 30px;
+}
+.section-main_quote-descrp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section-main_quote-descrp > img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.quote-name > h4 + p {
+    margin: 0;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--dark-blue);
