@@ -168,6 +168,9 @@ footer {
     color: #fff;
     font-size: 20px;
 }
+.col p {
+    margin: 0;
+}
 .col ul > li {
     margin: 10px;
 }
