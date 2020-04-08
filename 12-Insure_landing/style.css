@@ -171,6 +171,9 @@ footer {
     font-size: 35px;
     margin: 0 10px;
 }
+.fab:hover {
+    color: var(--dark-violet);
+}
 
 .bottom-footer h3 {
     text-transform: uppercase;
