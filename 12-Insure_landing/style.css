@@ -32,6 +32,9 @@ h1::before {
 a {
     text-decoration: none;
 }
+a:hover {
+    cursor: pointer;
+}
 
 .container {
     width: 1200px;
@@ -43,11 +46,16 @@ a {
     align-items: center;
 }
 .btn {
+    cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
     border: 1px solid var(--light-gray);
     color: #fff;
     text-transform: uppercase;
+}
+.btn:hover {
+    background-color: var(--light-gray);
+    color: var(--very-dark-violet);
 }
 
 /* HEADER */
@@ -70,6 +78,11 @@ a {
     border: 1px solid var(--very-dark-violet);
     padding: 10px 30px;
 }
+.menu > a:last-child:hover {
+    background-color: var(--very-dark-violet);
+    color: var(--light-gray);
+    
+}
 /* HERO */
 
 .hero {
@@ -89,6 +102,10 @@ a {
 }
 .hero-left {
     flex-basis: 50%;
+}
+.hero-left > p {
+    line-height: 27px;
+    margin-bottom: 15px;
 }
 .hero-right > img {
     position: relative;
@@ -143,4 +160,31 @@ footer {
     background-color: rgb(216, 214, 214);
     background-image: url(./images/bg-pattern-footer-desktop.svg);
     background-repeat: no-repeat;
+}
+.top-footer {
+    margin-bottom: 50px;
+}
+.fab {
+    color: var(--grayish-blue);
+    font-size: 35px;
+    margin: 0 10px;
+}
+
+.bottom-footer h3 {
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+}
+.col > ul {
+    padding: 0;
+}
+.col > ul > li {
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.col > ul > li > a {
+    color: var(--dark-violet);
+}
+.col > ul > li > a:hover {
+    text-decoration: underline;
 }
