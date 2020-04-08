@@ -1,0 +1,29 @@
+/* GENERALES */
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 1440px;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+.flex {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;justify-content: space-around;
+}
+
+
+/* HEADER */
+
+
+/* SECTION */
+
+.section-main {
+    background-color: rgb(249,248,254);
+    background-image: url(./images/bg-curve-desktop.svg);
+}
