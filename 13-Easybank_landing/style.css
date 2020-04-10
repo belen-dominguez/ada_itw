@@ -54,10 +54,13 @@ h2 {
 
 /* MAIN NAV */
 .mainNav {
-    padding: 30px 0;
+    padding: 15px 0;
     position: relative;
     z-index: 1;
     background-color: var(--very-light-gray) ;
+}
+.mainNav > div > a {
+    font-size: 15px;
 }
 .menu {
     width: 400px;
@@ -69,6 +72,7 @@ h2 {
     font-size: 13px;
 }
 
+
 /* HERO */
 .hero {
     background-color: hsla(233, 8%, 62%, .2);
@@ -76,14 +80,14 @@ h2 {
      background-image: url(./images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-size: 90% 190%;
-    background-position: 40em;
+    background-position: 35em;
 
 }
 .hero-cont-left {
     height: 100%;
-    width: 40%;
-    margin-left: 90px;
-    margin-top: 100px;
+    width: 35%;
+    margin-left: 7%;
+    margin-top: 10%;
 }
 
 .hero-left {
@@ -106,10 +110,7 @@ h2 {
     height: 100%;
     overflow: hidden;
 }
-/* .hero-right > img {
-    position: relative;
-   
-} */
+
 
 /* MAIN SECTION */
 
@@ -136,21 +137,34 @@ h2 {
     align-items: start;
 }
 
+.articles-container {
+    height: 500px;
+}
+
 .article {
     flex-basis: calc(25% - 10px);
-    border-radius: 5px;
+    height: 100%;
 }
-.article > img {
-    max-width: 100%;
+.img-article {
+    height: 40%;
 }
-.article > img:first-child {
+.img-article > img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* .article > img:first-child {
     height: 193px;
     width: 100%;
-}
+} */
+
 .article-descrip {
     background-color: var(--very-light-gray);
     padding: 15px;
     margin: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .article-descrip h4 {
     font-size: 15px;
@@ -161,8 +175,8 @@ h2 {
 /* FOOTER */
 
 footer {
-    background-color: hsl(234, 13%, 47%);
-    padding: 80px 0;
+    background-color: var(--dark-blue);
+    padding: 50px 0;
 }
 ul {
     margin: 0;
@@ -179,15 +193,19 @@ ul > li {
     align-items: flex-start;
 }
 .social i, .col ul li a {
-    color: #fff;
+    color: var(--very-light-gray);
     padding: 7px;
     font-size: 20px;
+}
+.col ul li a {
+    font-size: 18px;
 }
 .col ul li {
     margin-bottom: 10px;
 }
 .col1 img {
     margin-bottom: 30px;
+    filter: grayscale(50%) brightness(10%);
 }
 
 .footer-copyright {
