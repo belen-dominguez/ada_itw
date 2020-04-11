@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif; 
-    background-color: khaki;
+    background-color:  hsl(230, 17%, 14%);
     color: grey;
 }
 
@@ -15,6 +15,30 @@ h4 {
     margin: 0 auto;
 }
 
+.soc, .main {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.up {
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+    font-weight: 700;
+}
+.up::before {
+   content: "\25b2";
+   padding-right: 5px;
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
+    font-size: 12px;
+}
+.down::before {
+    content: "\25bc";
+    padding-right: 5px;
+}
+
+
 /* HEWDER */
 header {
     display: flex;
@@ -25,12 +49,21 @@ header {
     margin: 0;
 }
 
+.header-right {
+
+}
 .header-right > p {
     display: inline-block;
     margin-right: 10px;
+    color: #fff;
 }
-button {
+.btn {
+    display: inline-block;
+    text-decoration: none;
     cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color:  hsl(146, 68%, 55%);
 }
 
 /* MAIN SECTION */
@@ -42,7 +75,7 @@ button {
 }
 
 .main {
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 /* MAIN */
@@ -51,7 +84,6 @@ button {
     margin-bottom: 30px;
 }
 .main {
-    background-color: lightblue;
     width: 20%;
     height: 100%;
     text-align: center; 
@@ -75,58 +107,56 @@ button {
 }
 .main > h3 {
     color: gray;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0 0 15px;
+    letter-spacing: 3px;
 }
 
-.up {
-    color: green;
-    font-size: 12px;
-    font-weight: 700;
-}
-.up::before {
-   content: "\25b2";
-}
 
-.down {
-    color: red;
-    font-size: 12px;
-}
-.down::before {
-    content: "\25bc";
-}
 
 /* SECONDARY */
 
 .secondary {
     padding: 40px 0;
-    height: 200px;
+    height: 300px;
 }
 
 .social {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 30%;
 }
 .soc {
     width: 20%;
-    height: 20%;
+    height: 100%;
     margin: 0 10px 10px;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: lightblue;
-    text-align: left;
+    /* background-color: lightblue; */
     border-radius: 5px;
-}
-.soc p {
-    display: inline-block;
 }
 .soc-detail, .soc-icon {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
+.soc-icon {
+    align-items: flex-end;
+}
+.soc-detail p {
+    margin: 0;
+    font-size: 15px;
+}
+.soc-detail .nr {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.soc-icon > i{
+    font-size: 20px;
+}
+

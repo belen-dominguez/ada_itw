@@ -1,0 +1,18 @@
+@import "./style.css";
+
+body {
+    background-color: #fff;
+}
+
+
+h2, .header-right > p {
+    color: #000;
+}
+
+.soc, .main {
+    background-color: hsl(231, 9%, 85%);
+}
+
+.header-right > p {
+    color: ;
+}
