@@ -16,3 +16,6 @@ h2, .header-right > p {
 .bgd {
     background-color:  hsla(231, 9%, 85%, .4);
 }
+.main > h1, .soc-detail > .nr {
+    color: #000;
+}
