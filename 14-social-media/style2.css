@@ -1,7 +1,7 @@
 @import "./style.css";
 
 body {
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
 }
 
 
@@ -13,6 +13,6 @@ h2, .header-right > p {
     background-color: hsl(231, 9%, 85%);
 }
 
-.header-right > p {
-    color: ;
+.bgd {
+    background-color:  hsla(231, 9%, 85%, .4);
 }

@@ -38,6 +38,17 @@ h4 {
     padding-right: 5px;
 }
 
+.bgd {
+    position: absolute;
+    z-index: -1;
+    height: 250px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: hsl(232, 19%, 15%);
+    border-radius: 5px;
+
+}
 
 /* HEWDER */
 header {
