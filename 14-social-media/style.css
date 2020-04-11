@@ -1,0 +1,132 @@
+body {
+    font-family: 'Inter', sans-serif; 
+    background-color: khaki;
+    color: grey;
+}
+
+h2 {
+    color: #fff;
+}
+h4 {
+    font-size: 15px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEWDER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.header-left > h2, .header-left  h4 {
+    margin: 0;
+}
+
+.header-right > p {
+    display: inline-block;
+    margin-right: 10px;
+}
+button {
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main {
+    background-color: lightblue;
+}
+
+/* MAIN */
+.main-section {
+    height: 180px;
+    margin-bottom: 30px;
+}
+.main {
+    background-color: lightblue;
+    width: 20%;
+    height: 100%;
+    text-align: center; 
+    padding: 20px 20px;
+    border-radius: 5px;
+    border-top: 3px solid blue;
+}
+.fab {
+    color: lightseagreen;
+}
+ .m-title p {
+    display: inline-block;
+    color: gray;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.main > h1 {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+}
+.main > h3 {
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.up {
+    color: green;
+    font-size: 12px;
+    font-weight: 700;
+}
+.up::before {
+   content: "\25b2";
+}
+
+.down {
+    color: red;
+    font-size: 12px;
+}
+.down::before {
+    content: "\25bc";
+}
+
+/* SECONDARY */
+
+.secondary {
+    padding: 40px 0;
+    height: 200px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.soc {
+    width: 20%;
+    height: 20%;
+    margin: 0 10px 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    text-align: left;
+    border-radius: 5px;
+}
+.soc p {
+    display: inline-block;
+}
+.soc-detail, .soc-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
