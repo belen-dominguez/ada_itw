@@ -12,6 +12,9 @@ h2, .header-right > p {
 .soc, .main {
     background-color: hsl(231, 9%, 85%);
 }
+.soc:hover, .main:hover {
+    background-color: hsl(228, 4%, 73%);
+}
 
 .bgd {
     background-color:  hsla(231, 9%, 85%, .4);
