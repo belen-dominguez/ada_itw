@@ -4,7 +4,7 @@
     left: 10px;
     z-index: 5;
     padding: 20px;
-    color: #000;
+    color: #fff;
     font-size: 15px;
     background-color: rgba(0,0,0,.5);
     border-bottom-left-radius: 10px;
@@ -14,7 +14,7 @@
 }
 .repo a > span > i {
     font-size: 30px;
-    color: #000;
+    color: #fff;
     margin-left: 5px;
 }
 
