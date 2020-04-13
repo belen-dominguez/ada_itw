@@ -19,3 +19,63 @@
 }
 
 /* -----------------------------*/
+:root {
+    --color-rosa: hsl(0, 100%, 74%);
+    --color-violeta: hsl(248, 32%, 49%);
+    --fondo-gris: hsl(246, 25%, 77%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.container {
+    max-width: 80vw;
+    height: 60vh;
+    margin: 100px auto;
+    background: var(--color-rosa) url(./images/bg-intro-desktop.png);
+    padding: 80px ;
+    display: flex;
+    align-items: center;
+}
+
+.container__left {
+    padding: 4rem;
+    width: 45%;
+}
+.container__left h1 {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.container__right {
+    width: 45%;
+}
+.container__right-top {
+    background-color: var(--color-violeta);
+    padding: 5px 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 3px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.container__right-top > p > span {
+    font-weight: 700;
+}
+.container__right-bottom {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(243, 240, 240, 0.986);
+    border-radius: 20px;
+}
+.container__right-bottom input {
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #808080;
+    font-weight: 600;
+}
