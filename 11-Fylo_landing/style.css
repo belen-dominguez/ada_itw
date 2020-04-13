@@ -178,6 +178,9 @@ footer {
     margin-bottom: 0 !important;
     justify-content: space-around;
 }
+.footer {
+    width: 100%;
+}
 .col, .col a {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
