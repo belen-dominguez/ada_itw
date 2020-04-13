@@ -23,6 +23,7 @@
     --color-rosa: hsl(0, 100%, 74%);
     --color-violeta: hsl(248, 32%, 49%);
     --fondo-gris: hsl(246, 25%, 77%);
+    --color-verde: hsl(154, 59%, 51%);
 }
 
 body {
@@ -82,7 +83,15 @@ a {
     border: 1px solid #808080;
     font-weight: 600;
 }
-
+.btn {
+    background-color: var(--color-verde);
+    border: 1px solid hsl(154, 58%, 45%) !important;
+    box-shadow: 0 3px 0 0 hsl(154, 58%, 45%);
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
 .container__right-bottom > p {
     text-align: center;
     font-size: 10px;
