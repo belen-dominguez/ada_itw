@@ -202,7 +202,6 @@ ul > li {
 }
 .col1 img {
     margin-bottom: 30px;
-    filter: grayscale(50%) brightness(10%);
 }
 
 .footer-copyright {
