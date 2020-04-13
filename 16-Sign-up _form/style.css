@@ -62,7 +62,7 @@ a {
     padding: 5px 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 6px 0 0 rgba(0, 0, 0, .2);
     text-align: center;
 }
 
@@ -75,11 +75,12 @@ a {
     flex-direction: column;
     background-color: rgba(243, 240, 240, 0.986);
     border-radius: 10px;
+    box-shadow: 0 6px 0 0 rgba(0, 0, 0, .2);
 }
 .container__right-bottom input {
     padding: 18px 20px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #808080;
     font-weight: 600;
 }
@@ -91,6 +92,10 @@ a {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: hsla(154, 59%, 51%, .8)
 }
 .container__right-bottom > p {
     text-align: center;
