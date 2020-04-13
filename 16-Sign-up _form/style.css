@@ -30,6 +30,9 @@ body {
     font-size: 16px;
     color: #fff;
 }
+a {
+    text-decoration: none;
+}
 
 .container {
     max-width: 80vw;
@@ -57,7 +60,7 @@ body {
     background-color: var(--color-violeta);
     padding: 5px 50px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 5px 15px 3px rgba(0, 0, 0, .5);
     text-align: center;
 }
@@ -70,12 +73,22 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgba(243, 240, 240, 0.986);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .container__right-bottom input {
     padding: 18px 20px;
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid #808080;
+    font-weight: 600;
+}
+
+.container__right-bottom > p {
+    text-align: center;
+    font-size: 10px;
+    color: var(--fondo-gris);
+}
+.container__right-bottom > p > a {
+    color: var(--color-rosa);
     font-weight: 600;
 }
