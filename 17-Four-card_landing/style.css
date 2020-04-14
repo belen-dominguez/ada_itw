@@ -71,6 +71,7 @@ h1 {
 .container > p {
     width: 50%;
     margin: 20px auto;
+    font-weight: 600;
 }
 
 
@@ -81,10 +82,9 @@ h1 {
     width: 30%;
     margin: 10px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
     text-align: left;
-    
 }
 .box-container.doble {
     box-shadow: none;
@@ -97,15 +97,34 @@ h1 {
     padding: 20px;
 }
 
+.box-container h2, .box-container__up h2, .box-container__down h2 {
+    color: var(--azulOscuro);
+    font-size: 20px;
+}
+
+.box-container p, .box-container__up p, .box-container__down p {
+    font-size: 13px;
+    margin-right: 40px;
+}
+.box-container__up {
+    margin-bottom: 30px;
+}
+
 .br-lb {
-    border-top: 3px solid var(--cyan);
+    border-top: 4px solid var(--cyan);
 }
 .br-b {
-    border-top: 3px solid var(--azul);
+    border-top: 4px solid var(--azul);
 }
 .br-r {
-    border-top: 3px solid var(--rojo);
+    border-top: 4px solid var(--rojo);
 }
 .br-y {
-    border-top: 3px solid var(--naranja);
+    border-top: 4px solid var(--naranja);
+}
+
+.box-img {
+    margin-top: 30px;
+    margin-right: 10px;
+    text-align: right;
 }
