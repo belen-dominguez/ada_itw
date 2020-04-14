@@ -19,3 +19,72 @@
 }
 
 /* -------------------- */ 
+/* Basicos */
+:root {
+    --fondo-azul: hsl(217, 24%, 19%);
+    --fondo-footer: hsl(216, 53%, 9%);
+    --azul-testimoniales: hsl(219, 30%, 18%);
+}
+body {
+    color: #fff;
+    background-color: var(--fondo-azul);
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Main NAv */
+.main {
+    padding: 50px 0;
+}
+nav a {
+    margin-left: 50px;
+}
+
+
+/* Hero */
+
+.hero {
+    /* background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain; */
+    
+}
+.hero-content {
+    text-align: center;
+    padding-bottom: 300px;
+}
+
+
+.bg-img {
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    top: 700px;
+}
+
+/* Services */ 
+.services {
+   background-color: #181F2B;
+}
