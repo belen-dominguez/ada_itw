@@ -102,6 +102,7 @@ nav a {
 /* Services */ 
 .services {
    background-color: #181F2B;
+   padding-bottom: 100px;
 }
 
 .services-content {
@@ -113,4 +114,78 @@ nav a {
     width: 45%;
     margin: 30px 0;
     text-align: center;
+}
+
+
+/* DEscription */
+
+.description {
+    background-color: #181F2B;
+    padding-bottom: 100px;
+}
+.description__left {
+    width: 45%;
+}
+.description__right {
+    width: 45%
+}
+
+/* Testimonials */
+.testimonials {
+    position: relative;
+    z-index: 3;
+    background-color: #181F2B;
+    padding: 200px 0;
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    z-index: -1;
+}
+.testimonial {
+    position: relative;
+    background-color: var(--fondo-azul);
+    width: 27%;
+    padding: 20px;
+    font-size: 14px;
+}
+.testimonial-detail.flex {
+    justify-content: start;
+}
+.testimonial-detail img{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.testimonial-name span {
+    font-weight: 700;
+}
+.testimonial-name p {
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--fondo-footer);
+}
+
+    /* Call to Action */
+
+.cta {
+    position: relative;
+    background-color: var(--fondo-azul);
+    width: 60%;
+    top: -93px;
+    right: -23%;
+    z-index: 10;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cta p {
+    padding: 0 50px;
 }
