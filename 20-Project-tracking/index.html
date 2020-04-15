@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Project tracking intro component</title>
+  <title>Project tracking intro component</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
@@ -17,7 +17,42 @@
   </style>
 </head>
 <body>
-  Product
+
+  <header class="navbar">
+    <div class="navbar__logo">
+      <img src="images/logo.svg" alt="logo" />
+    </div>
+    <nav class="navbar__nav">
+      <img src="images/icon-hamburger.svg" class="navbar__nav__menu" alt="" />
+      <ul class="navbar__nav__list">
+        <li class="navbar__nav__item"><a href="">Product</a></li>
+        <li class="navbar__nav__item"><a href="">Features</a></li>
+        <li class="navbar__nav__item"><a href="">Pricing</a></li>
+        <li class="navbar__nav__item"><a href="">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <img src="images/illustration-devices.svg" alt="" class="img-block" />
+    <div class="info-container">
+      <div class="info-container__subtitle">
+        <span class="tag">New</span>
+        <span class="decription">Monograph Dashboard</span>
+      </div>
+      <h1 class="info-container__title">
+        Powerful insights into your team
+      </h1>
+      <p class="info-container__text">
+        Project planning and time tracking for agile teams
+      </p>
+      <div class="info-container__action">
+        <button class="btn-action">Schedule a demo</button>
+        <span class="description"> to see a live preview</span>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Product
   Features
   Pricing
   Login
@@ -30,7 +65,7 @@
 
   Schedule a demo
   to see a live preview
-  
+   -->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
