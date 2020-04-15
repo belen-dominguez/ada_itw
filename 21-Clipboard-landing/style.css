@@ -17,3 +17,74 @@
 }
 
 /* ------------------------*/
+/* Base */
+:root {
+    --cyan: hsl(171, 66%, 44%);
+    --celeste: hsl(233, 100%, 69%);
+    --gris-oscuro: hsl(210, 10%, 33%);
+    --gris: hsl(201, 11%, 66%);
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif; 
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    margin: 15px;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+}
+.btn-green {
+    background-color: var(--cyan);
+    box-shadow: 0 3px 0 0 hsl(171, 73%, 29%);
+}
+.btn-blue {
+    background-color: var(--celeste);
+    box-shadow: 0 3px 0 0 hsl(233, 57%, 38%);
+}
+
+/* Hero */
+#hero {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 40vh;
+    padding: 7rem;
+    text-align: center;
+}
+.container-hero {
+    width: 60%;
+    margin: 0 auto;
+}
+.container-hero h1 {
+    font-size: 2.5rem;
+    color: var(--gris-oscuro);
+}
+.container-hero h3 {
+    color: var(--gris);
+}
+
+
+/* Services */
