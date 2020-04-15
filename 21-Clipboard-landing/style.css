@@ -29,15 +29,20 @@ body {
     font-size: 18px;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    color: var(--gris);
 }
 
 a {
     text-decoration: none;
 }
+h1, h2, h3 {
+    color: var(--gris-oscuro);
+}
 
 /* Generales */
 .container {
-    max-width: 1200px;
+    width: 60%;
     margin: 0 auto;
 }
 .flex {
@@ -74,13 +79,12 @@ a {
     padding: 7rem;
     text-align: center;
 }
-.container-hero {
+/* .container-hero {
     width: 60%;
     margin: 0 auto;
-}
+} */
 .container-hero h1 {
     font-size: 2.5rem;
-    color: var(--gris-oscuro);
 }
 .container-hero h3 {
     color: var(--gris);
@@ -88,3 +92,27 @@ a {
 
 
 /* Services */
+#services {
+    padding: 5rem;
+   
+}
+
+.services-intro {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.services-detail {
+    width: 90%;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.services_left {
+    position: relative;
+    right: 185px;
+    width: 60%;
+}
+.services_right {
+    padding-top: 3rem;
+}
