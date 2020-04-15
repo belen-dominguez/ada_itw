@@ -26,8 +26,8 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    max-width: 1440px;
-    margin: 100px auto;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 img {
     max-width: 100%;
@@ -37,13 +37,18 @@ img {
     background: linear-gradient(135deg, rgb(248, 218, 218), hsl(0, 100%, 98%));
     
 }
+
 .left {
-    flex-basis: 50%;
+    flex: 1 1 50%;
     padding: 0 130px ;
 }
 
 .left-logo {
     margin-top: 50px;
+}
+
+.img-mobile, .left-logo-mobile {
+    display: none;
 }
 .left-title {
     margin-top: 150px;
@@ -63,7 +68,8 @@ img {
 }
 .left-form input{
     margin-top: 30px ;
-    padding: 10px 50px;
+    height: 2.5rem;
+    width: 70%;
     color: hsl(0, 36%, 70%);
     border: 1px solid hsl(0, 36%, 70%);
     border-radius: 20px;
@@ -79,14 +85,66 @@ img {
     top: 3px;
     
 }
-.left-form img {
+/* .left-form img {
 
-}
+} */
 
 .right {
-    flex-basis: 50%;
-    /* padding-left: 105px; */
+    flex: 1 1 50%;
 }
 .right-img{
    width: 100%;
+}
+
+footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1140px) {
+    
+    .left {
+        padding: 0 20px 50px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left-logo-mobile{
+        display: inline-block;
+        padding: 20px 0 20px 40px;
+        width: 300px;
+        text-align: left;
+    }
+    .left-logo-mobile img {
+        max-width: 50%;
+    }
+    .left-logo {
+        display: none;
+    }
+    .left {
+        padding: 0 20px 50px;
+        text-align: center;
+    }
+    .img-mobile{
+        display: inline-block;
+    }
+    .left-title {
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    .left-text {
+        font-size: 15px;
+    }
+
+    .right {
+        display: none;
+    }
+
 }
