@@ -258,3 +258,58 @@ footer {
     border-radius: 50%;
 }
 
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 100%;
+    }
+    .container {
+        padding: 0 2rem;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .hero-content {
+        padding: 0;
+        width: auto;
+    }
+    .hero-content p {
+        padding: 0;
+    }
+    .services-content, .service, .description__left, .description__right, .testimonial, .cta, .col-contact, .col-nav, .col-contact_mail-tel {
+        width: auto;
+    }
+    .description__right {
+        text-align: left;
+    }
+    .testimonial {
+        margin: 10px;
+    }
+    .testimonial-detail.flex {
+        flex-direction: row;
+    }
+    .testimonial img {
+        width: 15%;
+    }
+    .cta {
+        right: 0;
+    }
+    .cta p {
+        padding: 0;
+    }
+    .col-contact.flex {
+        align-items: flex-start;
+    }
+    .col-contact_mail-tel {
+        margin-left: 0;
+    }
+    .col-contact_location.flex {
+        flex-direction: row;
+    }
+    .col-contact {
+        margin-bottom: 2rem; 
+    }
+    .col {
+        margin-bottom: 1rem;
+    }
+
+}
