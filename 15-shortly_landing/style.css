@@ -55,7 +55,9 @@ a {
 
 /* MAIN NAV */
 
-
+.hamburguer-img {
+    display: none;
+}
 .mainNav {
     margin: 20px 0;
 }
@@ -124,6 +126,9 @@ a {
     border-radius: 10px;
     font-weight: 700;
     font-size: 15px;
+}
+.short input , .short button {
+    display: inline-block;
 }
 .btn2 {
     display: inline-block;
@@ -229,4 +234,84 @@ footer > .flex {
     display: inline-block;
     font-size: 20px;
     margin-right: 10px;
+}
+
+
+@media screen and (max-width:480px) {
+    img {
+        max-width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .nav-right, .nav-left > nav {
+        display: none;
+    }
+    .hamburguer-img {
+        display: inline-block;
+    }
+    .nav-left.flex {
+        flex-direction: row;
+    }
+    .nav-left {
+        width: 100%;
+    }
+    .hero-cont {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-left h1 {
+        font-size: 44px;
+    }
+    .hero-right-img img {
+        position: static;
+    }
+    .short {
+        height: auto;
+        padding: 1.5rem;
+        left: -16px;
+        bottom: -220px;
+        width: 100%;
+        margin: 0 1rem;
+
+    }
+    .short > form > input {
+        display: block;
+        width: 98%;
+        padding: 20px 0;
+        margin-bottom: 1rem;
+    }
+    .short button{
+        display: block;
+        width: 100%;
+    }
+    #services {
+        padding: 10rem 0 10rem 0;
+        position: relative;
+    }
+    .bd-line {
+        position: absolute;
+        width: 7px;
+        height: 600px;
+        top: 405px;
+        left: 193px;
+    }
+    .serv-descrip {
+        padding: 0 1rem;
+    }
+    .service {
+        width: auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    footer {
+        align-items: center;
+    }
+    footer > .flex {
+        align-items: center;
+    }
+    .col-social {
+        margin-top: 2rem;
+    }
+
 }
