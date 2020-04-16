@@ -204,3 +204,45 @@ footer {
 .footer-column i:nth-child(3) {
     margin-right: 0;
 }
+
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 100%; 
+    }
+    a {
+        margin-top: 10px;
+    }
+    .container {
+        width: auto;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    #hero, 
+    #services {
+        height: auto;
+        padding: 1rem;
+    }
+    #hero {
+        background-image: url(./images/bg-header-mobile.png);
+    }
+    .services_left {
+        position: static;
+        width: auto;
+    }
+    .services_right {
+        text-align: center;
+        padding: 0;
+    }
+    .sc-column {
+        width: auto;
+    }
+    #clients {
+        height: 30rem;
+    }
+    .footer-col4.flex {
+        align-items: center;
+        text-align: center;
+    }
+
+}
