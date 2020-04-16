@@ -109,3 +109,26 @@ a {
 }
 
 
+@media screen and (max-width:480px) {
+    .container {
+        flex-direction: column;
+        padding: 0 1.5rem;
+        height: auto;
+    }
+    .container__left, .container__right {
+        width: auto;
+    }
+    .container__left {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+    .container__left h1 {
+        font-size: 35px; 
+    }
+    .container__left p {
+        font-size: 17px;
+    }
+    .container__right {
+        margin-bottom: 1.5rem;
+    }
+}
