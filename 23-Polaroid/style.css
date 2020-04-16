@@ -51,10 +51,15 @@ figcaption {
     padding: 1rem;
     margin: 1rem;   
     box-shadow: 0 3px 15px 3px #000; 
+    position: relative;
+    z-index: 1;
+    filter: sepia(100%);
 }
 
 .img:hover {
-
+    transform: rotate(0deg)  scale(1.2);
+    z-index: 10;
+    filter: sepia(0);
 }
 
 .rotate-right {
