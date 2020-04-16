@@ -128,3 +128,18 @@ h1 {
     margin-right: 10px;
     text-align: right;
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .container > p, .box-container {
+        width: auto;
+    }
+    .box-container.doble {
+        width: 100%;
+    }
+}
