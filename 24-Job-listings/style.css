@@ -132,6 +132,11 @@ header {
         border-bottom: 1px solid gray;
         margin-bottom: 1rem;
         padding-bottom: 1rem;
+        width: 80%;
+        text-align: left;
+    }
+    .job-info.flex {
+        align-items: flex-start;
     }
     .job-img img {
         width: 60px;
@@ -139,11 +144,7 @@ header {
         top: -25px;
         left: 25px;
     }
-    /* .job-description {
-        border-bottom: 1px solid gray;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-    } */
+  
     .job-tags {
         width: 80%;
     }
