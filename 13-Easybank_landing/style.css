@@ -52,7 +52,7 @@ h2 {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -90,6 +90,9 @@ h2 {
 .menu > a {
     margin-right: 20px;
     font-size: 13px;
+}
+.img-menu {
+    display: none;
 }
 
 
@@ -229,4 +232,85 @@ ul > li {
 }
 .footer-copyright p {
     padding-top: 30px;
+}
+
+
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 100%;
+    }
+    .container {
+        padding: 0 2rem;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .img-menu {
+        display: inline-block;
+    }
+    .menu, .mainNav > div > a {
+        display: none;
+    }
+    .mainNav .flex {
+        flex-direction: row;
+    }
+    .hero {
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-size: contain;
+        background-position: top;
+        height: 50rem;
+    }
+    .hero.flex {
+        flex-direction: column-reverse;
+    }
+    .hero-cont-left, .hero-cont-right {
+        width: auto;
+    }
+    .hero-cont-right {
+        height: 45%;
+    }
+    .hero-right > img {
+        position: relative;
+        top: -119px;
+    }
+    .hero-cont-left {
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .hero-left {
+        align-items: center;
+    }
+    .hero-left > p {
+        font-size: 15px;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+    #main {
+        text-align: center;
+    }
+    #articles > div > h2 {
+        text-align: center;
+    }
+    .articles-container {
+        height: auto;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+    .footer-nav, .footer-copyright {
+        text-align: center;
+    }
+    .col2 {
+        margin-top: 1rem;
+    }
+    .footer-copyright .btn {
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    .footer-copyright p {
+        padding-top: 0;
+        font-size: 15px;
+    }
+
 }
