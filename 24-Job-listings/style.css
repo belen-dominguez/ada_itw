@@ -30,6 +30,7 @@ a {
     color: rgb(54, 150, 150);
     background-color: rgba(54, 150, 150,.3);
     padding: 5px 10px ;
+    margin: 0 .5rem;
 }
 header {
     width: 100%;
@@ -46,6 +47,9 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+.border {
+    border-left: 4px solid rgb(54, 150, 150);
+}
 
 .job {
     width: 100%;
@@ -53,6 +57,7 @@ header {
     margin: 2rem 0;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 3px 10px 3px rgba(0,0,0,.5);
 }
 .job-img {
     margin: 1rem;
@@ -92,9 +97,10 @@ header {
     word-spacing: 4px;
 }
 
-
-
 .job-tags {
     width: 40%;
     margin: 0 2rem;
+}
+.job-tags.flex {
+    justify-content: end;
 }
