@@ -91,6 +91,10 @@ h2 {
     margin-right: 20px;
     font-size: 13px;
 }
+.menu > a:hover {
+    color: #000;
+}
+
 .img-menu {
     display: none;
 }
@@ -217,8 +221,14 @@ ul > li {
     padding: 7px;
     font-size: 20px;
 }
+.social i:hover {
+    color: var(--cyan);
+}
 .col ul li a {
     font-size: 18px;
+}
+.col ul li a:hover{
+    color: var(--cyan);
 }
 .col ul li {
     margin-bottom: 10px;
