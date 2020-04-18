@@ -191,3 +191,41 @@ header {
     font-size: 20px;
 }
 
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column; 
+        padding: 40px 1rem;
+    }
+    .header-left {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid gray;
+    }
+    .header-right {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .main {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .secondary {
+        height: auto;
+        padding: 0 1rem;
+    }
+    }
+    .social {
+        flex-direction: column;
+        flex-wrap: nowrap; 
+    }
+    .soc {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
