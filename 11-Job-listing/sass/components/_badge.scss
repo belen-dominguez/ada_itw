@@ -1,0 +1,15 @@
+.item-badge {
+    padding: .3rem .6rem;
+    border-radius: 1rem;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.item-badge__new {
+    background-color: $primary-color;
+}
+
+.item-badge__feature {
+    background-color: #000;
+}
