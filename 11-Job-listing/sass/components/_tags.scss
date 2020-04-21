@@ -6,4 +6,8 @@
     padding: .5rem;
     border-radius: 3px;
     margin: .5rem;
+    &:hover {
+        color: #fff;
+        background-color: $primary-color;
+    }
 }

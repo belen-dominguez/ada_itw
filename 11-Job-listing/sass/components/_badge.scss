@@ -5,11 +5,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-}
-.item-badge__new {
-    background-color: $primary-color;
-}
-
-.item-badge__feature {
-    background-color: #000;
+    & .item-badge__new {
+        background-color: $primary-color;
+    }
+    & .item-badge__feature {
+        background-color: #000;
+    }
 }
