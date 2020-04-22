@@ -63,7 +63,7 @@ main .item {
     align-items: center;
   }
 }
-.item .item-new {
+.item-new {
   border-left: 4px solid #5ba4a4;
 }
 .item .item-content {
