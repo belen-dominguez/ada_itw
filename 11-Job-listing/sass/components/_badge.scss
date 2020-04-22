@@ -5,10 +5,12 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    & .item-badge__new {
+
+    //modificadores
+    &__new {
         background-color: $primary-color;
     }
-    & .item-badge__feature {
+    &__feature {
         background-color: #000;
     }
 }
