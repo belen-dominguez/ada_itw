@@ -10,6 +10,52 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  color: #fff;
+  background-color: #00ffff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 1rem 0;
+}
+
+input {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+input:invalid {
+  border-color: rgba(184, 11, 11, 0.9);
+  background-image: url("data:image/svg+xml,%3Csvg width='30px' height='20px' viewBox='5 0 35 35' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-128.000000, -59.000000%29' fill='%23F44336'%3E%3Cpolygon points='157.848404 61.9920213 145.980053 73.8603723 157.848404 85.7287234 154.856383 88.7207447 142.988032 76.8523936 131.119681 88.7207447 128.12766 85.7287234 139.996011 73.8603723 128.12766 61.9920213 131.119681 59 142.988032 70.8683511 154.856383 59'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+input:valid {
+  border-color: #50ca50;
+  background-image: url("data:image/svg+xml,%3Csvg width='30px' height='30px' viewBox='0 0 55 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%232EEC96'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  width: auto;
+}
+
+label {
+  font-weight: 700;
+}
+
+label[class=terms] {
+  font-weight: 400;
+  color: #696767;
+  font-size: 13px;
+}
+
 .conteiner {
   display: flex;
   width: 70%;
@@ -61,40 +107,6 @@ a {
   border-bottom-left-radius: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-
-label {
-  font-weight: 700;
-}
-
-label[class=terms] {
-  font-weight: 400;
-  color: #696767;
-  font-size: 13px;
-}
-
-input {
-  display: block;
-  width: 90%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border: 1px solid #d3d3d3;
-  border-radius: 5px;
-}
-
-input[type=checkbox] {
-  display: inline-block;
-  width: auto;
-}
-
-.btn {
-  color: #fff;
-  background-color: #00ffff;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  display: block;
-  margin: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

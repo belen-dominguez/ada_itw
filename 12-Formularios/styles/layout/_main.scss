@@ -1,0 +1,59 @@
+.conteiner {
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 0 $color-black;
+  
+    .conteiner__img {
+        width: 50%;
+        height: auto; 
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;  
+    }
+    .img--regitro {
+      background: url(../images/registro.png) pink;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    .img--login {
+      background: url(../images/login.png) cyan;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .conteiner__rigth {
+      width: 50%;
+      margin-left: 2rem;
+      padding: 1rem 0;
+  
+      .conteiner__tittle {
+        font-size: 27px;
+      }
+      .conteiner__subtittle {
+        font-size: 30px;
+        font-weight: 400;
+      }
+  
+      p {
+        color: rgb(105, 103, 103);
+        font-size: 13px;
+      }
+    }
+    
+  }
+  .login {
+    flex-direction: row-reverse;
+  
+    .img--login {
+      border-top-left-radius: 0; 
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px; 
+      border-bottom-right-radius: 10px;    
+    }
+  }
+  
+  
