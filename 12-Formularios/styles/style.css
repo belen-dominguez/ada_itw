@@ -8,6 +8,10 @@ html, body {
 
 a {
   text-decoration: none;
+  color: #3273DC;
+}
+a:hover {
+  color: #363636;
 }
 
 .repo {
@@ -29,12 +33,19 @@ a {
 
 .btn {
   color: #fff;
-  background-color: #00ffff;
-  padding: 1rem;
+  background-color: #00D1B2;
+  padding: 0.7rem 1rem;
   border: none;
   border-radius: 5px;
   display: block;
   margin: 1rem 0;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #00C4A7;
+}
+.btn:active {
+  background-color: #00B89C;
 }
 
 input {
@@ -77,12 +88,15 @@ label[class=terms] {
   display: flex;
   width: 70%;
   height: auto;
-  margin: 0 auto;
+  margin: 5rem auto;
   border-radius: 10px;
   box-shadow: 0 3px 7px 0 #000;
 }
-.conteiner .conteiner__img {
+.conteiner .container-gral {
   width: 50%;
+  padding: 3rem 0;
+}
+.conteiner .conteiner__img {
   height: auto;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -100,9 +114,7 @@ label[class=terms] {
   background-position: center;
 }
 .conteiner .conteiner__rigth {
-  width: 50%;
   margin-left: 2rem;
-  padding: 1rem 0;
 }
 .conteiner .conteiner__rigth .conteiner__tittle {
   font-size: 27px;

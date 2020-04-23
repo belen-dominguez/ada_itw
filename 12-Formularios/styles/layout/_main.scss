@@ -2,12 +2,15 @@
     display: flex;
     width: 70%;
     height: auto;
-    margin: 0 auto;
+    margin: 5rem auto;
     border-radius: 10px;
     box-shadow: 0 3px 7px 0 $color-black;
   
+    .container-gral {
+      width: 50%;
+      padding: 3rem 0;
+    }
     .conteiner__img {
-        width: 50%;
         height: auto; 
         border-top-left-radius: 10px; 
         border-bottom-left-radius: 10px;  
@@ -26,9 +29,8 @@
       background-position: center;
     }
     .conteiner__rigth {
-      width: 50%;
       margin-left: 2rem;
-      padding: 1rem 0;
+      // padding: 1rem 0;
   
       .conteiner__tittle {
         font-size: 27px;

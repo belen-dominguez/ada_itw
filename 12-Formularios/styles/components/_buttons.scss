@@ -2,10 +2,18 @@
 .btn {
     color: $color-white;
     background-color: $color-cyan;
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     border: none;
     border-radius: 5px;
     display: block;
     margin: 1rem 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-cyan-hover;
+    }
+    &:active {
+      background-color: $color-cyan-active;
+    }
   }
   
