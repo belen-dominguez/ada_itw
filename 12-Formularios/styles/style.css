@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.conteiner {
+  display: flex;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px 0 #000;
+}
+.conteiner .conteiner__img {
+  width: 50%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.conteiner .img--regitro {
+  background: url(../images/registro.png) pink;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.conteiner .img--login {
+  background: url(../images/login.png) cyan;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.conteiner .conteiner__rigth {
+  width: 50%;
+  margin-left: 2rem;
+  padding: 1rem 0;
+}
+.conteiner .conteiner__rigth .conteiner__tittle {
+  font-size: 27px;
+}
+.conteiner .conteiner__rigth .conteiner__subtittle {
+  font-size: 30px;
+  font-weight: 400;
+}
+.conteiner .conteiner__rigth p {
+  color: #696767;
+  font-size: 13px;
+}
+
+.login {
+  flex-direction: row-reverse;
+}
+.login .img--login {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+label {
+  font-weight: 700;
+}
+
+label[class=terms] {
+  font-weight: 400;
+  color: #696767;
+  font-size: 13px;
+}
+
+input {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  width: auto;
+}
+
+.btn {
+  color: #fff;
+  background-color: #00ffff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
