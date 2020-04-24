@@ -1,7 +1,7 @@
 Ejercicio Form login y registro
 
-Form registro[https://codepen.io/pablohHoc/full/ZEYzpaV]
-Form login[https://codepen.io/pablohHoc/full/qBEWqmr]
+[Form registro](https://codepen.io/pablohHoc/full/ZEYzpaV)
+[Form login](https://codepen.io/pablohHoc/full/qBEWqmr)
 Estilos
 
     Título:
