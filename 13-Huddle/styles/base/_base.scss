@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    //font x default es 16px. el 62.5% de 16px es 10px... entonces 1rem=10px. es mas facil para calcular los rem.
+}
+body {
+    font-family: $font-openSans;
+    font-size: $font-size-base;
+}
+
+h1, h2 {
+    font-family: $font-poppins;
+    font-weight: $fw-600;
+    color: $color-dark-green;
+}
