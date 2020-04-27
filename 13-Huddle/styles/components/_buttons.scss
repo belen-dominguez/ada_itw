@@ -1,0 +1,15 @@
+.btn {
+    padding: .5rem 1.5rem; 
+    border-radius: 1rem;
+    border: none;
+    font-weight: 600;
+
+    //modificadores
+    &--grey {
+        background-color: $color-white;
+        box-shadow: 0 3px 7px 0 #000;
+        font-size: 1rem;
+        
+    }
+}
+
