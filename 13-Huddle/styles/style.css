@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,24 +50,228 @@ img {
   border-radius: 1rem;
   border: none;
   font-weight: 600;
+  margin: 1rem 0;
 }
 .btn--grey {
   background-color: #fff;
   box-shadow: 0 3px 7px 0 #000;
   font-size: 1rem;
 }
-
-header {
-  background: #ebfbff url(../images/bg-hero-mobile.svg);
-  padding: 2rem;
+@media screen and (min-width: 480px) {
+  .btn--grey {
+    padding: 1rem 5rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+  }
 }
-header .nav {
+.btn--pink {
+  background-color: #ff52bf;
+  margin: 2rem 0;
+  padding: 1rem 4rem;
+  border-radius: 1.5rem;
+  color: #fff;
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .nav .nav__logo {
+.nav .nav__logo {
   width: 12rem;
+}
+@media screen and (min-width: 480px) {
+  .nav .nav__logo {
+    width: 18rem;
+  }
+}
+
+.hero {
+  margin: 2rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.hero .hero__info {
+  padding: 0 0 1rem;
+}
+@media screen and (min-width: 480px) {
+  .hero .hero__info {
+    width: 40%;
+  }
+}
+.hero .hero__info .hero__title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 480px) {
+  .hero .hero__info .hero__title {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero .hero__img {
+    width: 50%;
+  }
+}
+
+.card {
+  margin: 1rem 1rem 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 7px 0 #000;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .card {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 1rem auto 3rem;
+    text-align: left;
+  }
+}
+.card--reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 480px) {
+  .card--reverse {
+    flex-direction: row;
+  }
+}
+.card--float {
+  margin-bottom: -12rem;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+@media screen and (min-width: 480px) {
+  .card--float {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto -12rem;
+  }
+}
+.card--float h1 {
+  font-size: 2rem;
+}
+@media screen and (min-width: 480px) {
+  .card--float h1 {
+    font-size: 3rem;
+  }
+}
+.card .card__info {
+  margin: 2rem;
+  padding: 1rem 0;
+}
+@media screen and (min-width: 480px) {
+  .card .card__info {
+    width: 40%;
+    margin: 0 2rem;
+  }
+}
+.card .card__info .card__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.card .card__info .card__description {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 480px) {
+  .card .card__img {
+    width: 50%;
+  }
+}
+
+header {
+  background: #ebfbff url(../images/bg-hero-mobile.svg);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 480px) {
+  header {
+    background: #ebfbff url(../images/bg-hero-desktop.svg);
+    padding: 2rem 6rem;
+  }
+}
+
+main {
+  margin: 2rem;
+}
+
+footer {
+  background-color: #00252e;
+  padding: 15rem 2rem 2rem;
+  color: #fff;
+}
+footer ul li {
+  list-style: none;
+}
+footer a, footer i {
+  color: #fff;
+}
+footer a {
+  display: inline-block;
+  margin: 1rem 0;
+}
+@media screen and (min-width: 480px) {
+  footer .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer .columns .column__item {
+  margin: 2rem 0;
+}
+@media screen and (min-width: 480px) {
+  footer .columns .column__item {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 480px) {
+  footer .columns .column__item--contact {
+    width: 35%;
+  }
+}
+footer .columns .column__item .column__info .column__icon {
+  margin: 1rem;
+}
+footer .columns .column__item .column_description--lorem {
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 80%;
+  vertical-align: text-top;
+}
+footer .columns .social {
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  footer .columns .social {
+    text-align: left;
+  }
+}
+footer .columns .social .social__icons {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 480px) {
+  footer .copyright {
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

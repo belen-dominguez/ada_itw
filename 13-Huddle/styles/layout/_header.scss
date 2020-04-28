@@ -1,16 +1,14 @@
 header {
     background: $bg-color-header url(../images/bg-hero-mobile.svg);
     padding: 2rem ;
+    margin-bottom: 4rem;
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .nav__logo {
-            width: 12rem;
-        }
+    @media screen and (min-width: 480px) {
+        background: $bg-color-header url(../images/bg-hero-desktop.svg);
+        padding: 2rem 6rem;
     }
+
+    
 
 
 }
