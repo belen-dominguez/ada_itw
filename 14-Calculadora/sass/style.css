@@ -1,0 +1,92 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.repo {
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 10;
+  padding: 20px;
+  color: #fff;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.repo a > span > i {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+button {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 0.3rem;
+}
+
+.btn--number {
+  width: 6rem;
+  height: 4rem;
+}
+
+.visorCalculadora {
+  position: relative;
+}
+.visorCalculadora input {
+  width: 100%;
+  padding: 1.7rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.visorCalculadora .displaNumberOne {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: #b9b7b7;
+}
+
+.teclas__varias {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.teclas {
+  display: flex;
+}
+.teclas .teclas__operaciones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+body {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container {
+  width: 300px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=style.css.map */
