@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.repo {
+    position: fixed;
+    top: 0;
+    left: 3rem;
+    z-index: 10;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.repo a > span > i {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 5px;
+}  
+
+.intro__text {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+button {
+    /* padding: 1rem; */
+    margin: 0.5rem;
+    width: 14rem;
+    height: 4rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 3px 0  rgba(0,0,0,.5);
+    background-color: rgb(52, 161, 52);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+  
+}
+button:hover {
+    background-color: rgb(38, 121, 38);
+}
+
+.btn_go {
+    width: 8rem;
+}
+
+.displayPregunta {
+    text-transform: uppercase;
+    margin: 5rem 2rem 3rem;
+    font-size: 2rem;
+}
+
+.input__main{
+    display: inline-block;
+    width: 80%;
+    height: 3.7rem;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.item__list:checked + .item {
+    text-decoration: line-through;
+}
+
+.list {
+    margin: 2rem 0 0 2rem;
+    text-align: left;
+
+}
+label {
+    margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 480px){
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .btn_go {
+        width: 90%;
+        margin: 1rem ;
+    }
+    .input__main{
+        width: 90%;
+        margin: 1rem ;
+    }
+}
