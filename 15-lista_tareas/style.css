@@ -50,10 +50,14 @@ button {
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all, .4s   ;
   
 }
 button:hover {
     background-color: rgb(38, 121, 38);
+    /* transform: translate(10px) scale(1.1); */
+    transform: translate3d(0,4px,10px);
+   
 }
 
 .btn_go {
@@ -72,6 +76,7 @@ button:hover {
     height: 3.7rem;
     border-radius: 10px;
     border: 1px solid;
+    padding-left: 1rem;
 }
 
 .item__list:checked + .item {

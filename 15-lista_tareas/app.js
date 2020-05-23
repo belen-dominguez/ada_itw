@@ -84,14 +84,19 @@ const modificarTarea = () => {
         alert('El campo no puede estar vacio')
         return
     }
+    else if (input[0].value > (tareas.length -1) ){
+        alert('El nro de tarea ingersado no existe')
+        input[0].value= ""; 
+        return
+    }
 
    const decisionUsuario = confirm(`Seguro quiere modificar la tarea: ${tareas[tareaModificar]}`);
 
    
      if (decisionUsuario ) {
         input[0].value= "";  
-        displayPregunta.innerHTML = "Ingrese la nueva tarea"
-
+        displayPregunta.innerHTML = "Modifique su tarea"
+        input[0].value = tareas[tareaModificar];
         sacarFunciones();
 
         btn[4].addEventListener('click', modificarTarea2)
@@ -109,6 +114,11 @@ const eliminarTarea = () => {
         
     if(input[0].value == "") {
         alert('El campo no puede estar vacio')
+        return
+    }
+    else if (input[0].value > (tareas.length -1) ) {
+        alert('El nro de tarea ingersado no existe')
+        input[0].value= ""; 
         return
     }
     
