@@ -1,0 +1,46 @@
+.head__table {
+    background-color: $color-blue;
+    color: $color-white;
+    height: 7rem;
+
+    h2{
+        font-size: 3rem;
+        padding: 1rem 3rem
+    }
+    &--ventas{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   
+}
+
+.table {
+
+    th,  td {
+        padding: 1.6rem;
+    }
+
+    tbody{
+        tr:hover {
+            background-color: $color-grey;
+        }
+    }
+    
+}
+
+.table, .info {
+    background-color: $color-white;
+    color: $color-blue;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+.info{
+    padding: 2rem;
+
+    span {
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,41 @@
+.btn--ventaNueva {
+    background-color: $color-green;
+    color: $color-white;
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 15rem;
+    margin-right: 4rem;
+    border: 1px solid $color-green;
+    border-radius: .5rem;
+
+    &:hover{
+        background-color: $color-drk-green;
+    }
+}
+
+.fa-trash {
+    cursor: pointer;
+    color: $color-red;
+}
+
+.btn{
+    margin: 2rem .5rem;
+    font-size: 1.8rem;
+    border: 1px solid grey;
+    width: 10rem;
+}
+.btnCancelarVenta{
+    background-color: $color-white;
+    &:hover{
+        background-color: $color-grey;
+    }
+}
+.btnAgregarVenta{
+    background-color: $color-green;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-drk-green;
+        color: $color-white;
+    }
+}

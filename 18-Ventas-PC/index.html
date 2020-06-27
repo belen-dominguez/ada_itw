@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Ventas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a9410861d7.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class='repo'>
+  <a href='https://github.com/belen-dominguez/practicas/tree/master/18-Ventas-PC' target='_blank'><span title='Ingresar a Repo'> <i class='fab fa-github'></i></span></a>
+  </div>
+
+    <div class="head__table head__table--ventas">
+        <h2>Ventas</h2>
+        <button id="btnModal" class="btn--ventaNueva"><i class="fas fa-plus-circle"></i>
+            Nueva Venta</button>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Vendedora </th>
+            <th scope="col">Sucursal </th>
+            <th scope="col">Sucursal </th>
+            <th scope="col">Precio </th>
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <tbody class="tabla--body">
+        </tbody> 
+    </table> <!-- fin primera tabla-->
+
+    <div class="head__table">
+        <h2>Ventas por sucursal</h2>
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Sucursal</th>
+        <th scope="col">Total Ventas </th>
+        </tr>
+    </thead>
+    <tbody class="tabla--body">
+        
+    </tbody>
+    </table><!-- Fin tabla 2-->
+
+    <div class="info">
+        <p>Producto estrella: <span class="mejores"></span> </p>
+        <p>Vendedora que más ingresos generó: <span class="mejores"></span> </p>
+    </div>
+
+
+
+ <!-- modal -->
+ <div id="modal" class="modalContainer fade">
+    <div class="modal-content" id="modalContent">
+      <div class="header">
+        <h2>Agregar Venta</h2>
+        <span id="close" class="close">×</span>
+      </div>
+      
+      <p>
+        Vendedora:
+      </p>
+      <select name="rte" id="vendedora--select"></select>
+      <p>Componentes:</p>
+      <select name="rte" id="componente--select" multiple> </select>
+      <p>Sucursal:</p>
+      <select name="Sucursales" id="sucursal--select"></select>
+
+      <div class="footer">
+        <button class="btn btnCancelarVenta">Cancel</button>
+        <button class="btn btnAgregarVenta">Add</button>
+      </div>
+    </div>
+  </div>
+
+ 
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

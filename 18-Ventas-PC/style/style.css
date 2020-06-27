@@ -1,0 +1,195 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 200;
+  font-size: 1.5rem;
+  max-width: 120rem;
+  margin: 5rem auto;
+  background: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.repo {
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 10;
+  padding: 20px;
+  color: #fff;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.repo a > span > i {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn--ventaNueva {
+  background-color: #5cb85c;
+  color: #ffffff;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 15rem;
+  margin-right: 4rem;
+  border: 1px solid #5cb85c;
+  border-radius: 0.5rem;
+}
+.btn--ventaNueva:hover {
+  background-color: #449d44;
+}
+
+.fa-trash {
+  cursor: pointer;
+  color: #f44336;
+}
+
+.btn {
+  margin: 2rem 0.5rem;
+  font-size: 1.8rem;
+  border: 1px solid grey;
+  width: 10rem;
+}
+
+.btnCancelarVenta {
+  background-color: #ffffff;
+}
+.btnCancelarVenta:hover {
+  background-color: #f5f5f5;
+}
+
+.btnAgregarVenta {
+  background-color: #5cb85c;
+  color: #ffffff;
+}
+.btnAgregarVenta:hover {
+  background-color: #449d44;
+  color: #ffffff;
+}
+
+.fade {
+  opacity: 0;
+  z-index: -100;
+}
+
+.show {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modalContainer {
+  transition: all 0.1s ease-out;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  color: #435d7d;
+  max-width: 50rem;
+  background-color: #fefefe;
+  margin: 18rem auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-top: 10px solid #58abb7;
+  width: 60%;
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+.modal-content .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #b8b5b5;
+}
+.modal-content p {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.modal-content select {
+  border: 1px solid #b8b5b5;
+  height: 4rem;
+  padding-left: 1.5rem;
+}
+.modal-content #componente--select {
+  height: 10rem;
+}
+.modal-content .footer {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.modalContainer .close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+  transform: translate(0%, -50%);
+}
+
+.head__table {
+  background-color: #435d7d;
+  color: #ffffff;
+  height: 7rem;
+}
+.head__table h2 {
+  font-size: 3rem;
+  padding: 1rem 3rem;
+}
+.head__table--ventas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table th, .table td {
+  padding: 1.6rem;
+}
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table, .info {
+  background-color: #ffffff;
+  color: #435d7d;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.info {
+  padding: 2rem;
+}
+.info span {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */
