@@ -1,4 +1,4 @@
-[
+const trabajos =[
   {
     "id": 1,
     "company": "Photosnap",
@@ -109,12 +109,12 @@
     "featured": false,
     "position": "Junior Frontend Developer",
     "role": "Frontend",
-    "level": "Junior",
+    "level": "Senior",
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "USA Only",
     "languages": ["JavaScript"],
-    "tools": ["Vue, Sass"]
+    "tools": ["Vue", "Sass"]
   },
   {
     "id": 9,

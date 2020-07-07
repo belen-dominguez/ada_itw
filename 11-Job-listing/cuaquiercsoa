@@ -1,0 +1,265 @@
+<!-- 
+  <div class="item item-new">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/photosnap.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Photosnap</span>
+        <span class="item-badge item-badge__new">New!</span>
+        <span class="item-badge item-badge__feature">Featured</span>
+        <h3 ><a href="">Senior Frontend Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Frontend</a>
+      <a class="item-tags" href="">Senior</a>
+      <a class="item-tags" href="">HTML</a>
+      <a class="item-tags" href="">CSS</a>
+      <a class="item-tags" href="">JavaScript</a>
+    </div>
+  </div>
+
+  <!-- <div class="item item-new">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/manage.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Manage</span>
+        <span class="item-badge item-badge__new">New!</span>
+        <span class="item-badge item-badge__feature">Featured</span>
+        <h3 ><a href="">Fullstack Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Fullstack</a>
+      <a class="item-tags" href="">Midweight</a>
+      <a class="item-tags" href="">Python</a>
+      <a class="item-tags" href="">React</a>
+    </div>
+  </div>
+  
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/myhome.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>MyHome</span>
+        <span class="item-badge item-badge__new">New!</span>
+        <h3 ><a href="">Junior Frontend Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Frontend</a>
+      <a class="item-tags" href="">Junior</a>
+      <a class="item-tags" href="">React</a>
+      <a class="item-tags" href="">JavaScript</a>
+    </div>
+  </div>
+-->
+<!--  
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/account.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Account</span>
+        <h3 ><a href="">Junior Frontend Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Frontend</a>
+      <a class="item-tags" href="">Junior</a>
+      <a class="item-tags" href="">CSS</a>
+      <a class="item-tags" href="">JavaScript</a>
+    </div>
+  </div>
+
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/loop-studios.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Loop Studios</span>
+        <h3 ><a href="">Software Engineer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Fullstack</a>
+      <a class="item-tags" href="">Midweight</a>
+      <a class="item-tags" href="">Ruby</a>
+      <a class="item-tags" href="">JavaScript</a>
+      <a class="item-tags" href="">Sass</a>
+    </div>
+  </div>
+
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/faceit.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>FaceIt</span>
+        <h3 ><a href="">Junior Backend Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Backend</a>
+      <a class="item-tags" href="">Junior</a>
+      <a class="item-tags" href="">Ruby</a>
+      <a class="item-tags" href="">RoR</a>
+    </div>
+  </div>
+
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/shortly.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Shortly</span>
+        <h3 ><a href="">Junior Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Frontend</a>
+      <a class="item-tags" href="">Junior</a>
+      <a class="item-tags" href="">HTML</a>
+      <a class="item-tags" href="">JavaScript</a>
+      <a class="item-tags" href="">Sass</a>
+    </div>
+  </div>
+
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/insure.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Insure</span>
+        <h3 ><a href="">Junior Frontend Developer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Frontend</a>
+      <a class="item-tags" href="">Junior</a>
+      <a class="item-tags" href="">Vue</a>
+      <a class="item-tags" href="">JavaScript</a>
+      <a class="item-tags" href="">Sass</a>
+    </div>
+  </div>
+
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/eyecam-co.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>Eyecam Co.</span>
+        <h3 ><a href="">Full Stack Engineer</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+      
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Fullstack</a>
+      <a class="item-tags" href="">Midweight</a>
+      <a class="item-tags" href="">Python</a>
+      <a class="item-tags" href="">JavaScript</a>
+      <a class="item-tags" href="">Django</a>
+    </div>
+  </div>
+
+  <div class="item ">
+    <div class="item-content">
+      <div class="item-img">
+        <img src="./images/the-air-filter-company.svg" alt="">
+      </div>
+      <div class="item-detail">
+        <span>The Air Filter Company</span>
+        <h3 ><a href="">Front-end Dev</a></h3>
+        <div class="item-detail-bottom flex">
+          <p>1d ago</p>
+          <p>Full Time</p>
+          <p>USA only</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="item-tag">
+      <a class="item-tags" href="">Frontend</a>
+      <a class="item-tags" href="">Junior</a>
+      <a class="item-tags" href="">React</a>
+      <a class="item-tags" href="">JavaScript</a>
+      <a class="item-tags" href="">Sass</a>
+    </div>
+  </div>  -->
+
+  --------
+
+  <a onclick="filtrar('${oferta.role}')"  class="item-tags" href="">${oferta.role}</a>
+    <a onclick="filtrar('${oferta.level}')"  class="item-tags" href="">${oferta.level}</a>
+    
+    ${imprimirLenguajes(oferta.languages)}
+    ${imprimirLenguajes( oferta.tools)}
+
+    //  let arrRole = ["Frontend", "Fullstack", "Backend"] 
+    // let arrLEvel = ["Senior", "Midweight","Junior" ] 
+    // let arrLanguages = ["HTML", "CSS", "JavaScript","Python"]
+    // let arrTools = ["React", "Sass","Django","Vue","RoR","Ruby"]

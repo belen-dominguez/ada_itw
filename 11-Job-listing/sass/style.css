@@ -144,6 +144,93 @@ main .item {
   background-color: #5ba4a4;
 }
 
+.selected {
+  color: #fff;
+  background-color: #5ba4a4;
+}
+
+.fade {
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modalContainer {
+  transition: all 0.1s ease-out;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  height: 6rem;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-top: 10px solid #58abb7;
+  width: 60%;
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+.modal-content .header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-content p {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.modal-content select {
+  border: 1px solid #b8b5b5;
+  height: 4rem;
+  padding-left: 1.5rem;
+}
+.modal-content #componente--select {
+  height: 10rem;
+}
+.modal-content .footer {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.modal-content .close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+  transform: translate(20%, -50%);
+}
+
+.closeTag {
+  color: #aaaaaa;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.closeTag:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 .repo {
   position: fixed;
   top: 0;
