@@ -3,6 +3,7 @@
 let characters = [];
 let quotes = [];
 let qtyDeath = [];
+let muertesTotales= [];
 
 const getCharacter = () => {
     
@@ -14,10 +15,25 @@ const getCharacter = () => {
        // console.log(data)
         characters = data;
         printCards(data);
-    })
-};
 
-const getDeath = () => {
+        characters.forEach( character => {
+            fetch(`https://breakingbadapi.com/api/death-count?name=${character.name}`)
+            .then(response => {
+                return response.json()
+            })
+            .then(deaths => {
+
+                muertesTotales.push(deaths[0])
+                //console.log("hola", muertes)
+                return muertesTotales
+            })
+        })
+
+    })
+    
+    
+};
+const getDeath = () => { 
     
     fetch("https://breakingbadapi.com/api/deaths")
     .then((response) => {
@@ -46,6 +62,17 @@ const getQuotes = () => {
 
 
 //Bring death of character
+const getDeathsByAuthor = (character) => {
+
+    let muertesPersonaje =  muertesTotales.filter( personaje => {
+        //console.log("nombre", personaje.name)
+        return personaje.name == character
+    })
+
+    return muertesPersonaje[0].deathCount
+
+}
+
 const filterDeath = (character) => {
 
     let arrDEath =  qtyDeath.filter( item => {

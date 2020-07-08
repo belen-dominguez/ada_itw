@@ -57,15 +57,21 @@ clear.addEventListener("click", () => {
 
 //Modal - Display Extra info
 const openModal = (character, id) => {
-   
+    
     const cardExtra = document.getElementById(`card-extra${id}`);
     const quote = document.getElementById(`quote${id}`);
     const deaths = document.getElementById(`deaths${id}`);
-    
+  
+
     cardExtra.classList.toggle("d-block")
    
     quote.textContent = `Frase: "${filterQuotes(character)}"`;
-    deaths.textContent = `Cant de muertes: ${filterDeath(character)}`;
+    // deaths.textContent = `Cant de muertes: ${filterDeath(character)}`;
+
+   
+    deaths.textContent = `Cant de muertes: ${getDeathsByAuthor(character)}`;
+    //deaths.textContent = `Cant de muertes: ${muertes}`;
+    
     
 
      // modal.classList.replace("fade", "show");
