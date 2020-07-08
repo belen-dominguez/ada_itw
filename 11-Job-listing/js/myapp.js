@@ -19,22 +19,25 @@ const abrirnModalPorItem = () => {
     itemTagsarr.forEach( item => {
        
         
-        item.addEventListener("click", () => {
+        item.addEventListener("click", (e) => {
             modalContent.classList.add("active");
             
-
+            
             displayTag.innerHTML +=  `<span class="showTag"> ${item.textContent}<span class="closeTag ">x</span></span>`
 
+    
             //recien aca me toma el array xq antes de imprimir las lineas de arriba, no existe
             closeTagsarr = Array.from(document.getElementsByClassName("closeTag"))
 
             //para q me ejecute la funcion cuando hago click y aparezca en modal
             filtrar(item.textContent)
-            console.log("con click",filtros)
-            funcionCerrarTag()
+            //console.log("con click",filtros)
 
-         })
+             funcionCerrarTag()
+
         })
+        
+    })
              
 
 }
@@ -45,11 +48,6 @@ const funcionCerrarTag = () => {
             //para que todo el tag desaparezca
             showTag[indice].classList.add("fade")
 
-                // console.log("con close", filtros)
-                // console.log("textcontent",closeitem.previousSibling.nodeValue)
-            //console.log("con close", filtros)
-
-            //filtros.splice(filtros.indexOf(item),1)
 
             filtrar((closeitem.previousSibling.nodeValue).trim())
         })
@@ -58,32 +56,39 @@ const funcionCerrarTag = () => {
 
 
 const filtrar = (item) => {
-    // console.log("item", item)
-    // console.log("filtros antes de filtrar", filtros)
 
-if (filtros.indexOf(item) === -1) { 
-filtros.push(item) }
-else{
-    filtros.splice(filtros.indexOf(item),1)
-}
-if(filtros === []){
-    ofertasTrabajo(trabajos)
-}
+    if (filtros.indexOf(item) === -1) { 
+    filtros.push(item) }
+    else{
+        filtros.splice(filtros.indexOf(item),1)
+    }
+    if(filtros.length == 0){
+        modalContent.classList.remove("active");
+        ofertasTrabajo(trabajos)
+    }
 
-let jobsFiltered = [...trabajos]
+    let jobsFiltered = [...trabajos]
 
-jobsFiltered = jobsFiltered.filter(job => {
-    return filtros.every(filtro => {
-    return [
-        job.role,
-        job.level,
-        ...(job.languages || []),
-        ...(job.tools || [])
-    ].includes(filtro)
-    });
-})
-console.log("filtros dps de filtrar", filtros)
-ofertasTrabajo(jobsFiltered)
+    jobsFiltered = jobsFiltered.filter(job => {
+        return filtros.every(filtro => {
+        return [
+            job.role,
+            job.level,
+            ...(job.languages || []),
+            ...(job.tools || [])
+        ].includes(filtro)
+        });
+    })
+    // console.log("filtros dps de filtrar", filtros)
+
+   
+
+    ofertasTrabajo(jobsFiltered);
+
+    
+
+
+    
 }
  //para imprimer badge de "new" y featured" 
 const trabajoNuevo = (job) => {
@@ -106,11 +111,11 @@ const tags = (array) => {
     // ACA SE ESTA MODIFICANDO CON FILTRAR
     return array.reduce((accum, item) => {
       //return accum + `<span onclick = "filtrar('${item}')" class="item-tags">${item}</span>`
-      return accum + `<span  class="item-tags">${item}</span>`
+      return accum + `<span  class="item-tags" >${item}</span>`
     }, "");
 }
   
-  
+//imprime las cards
 const ofertasTrabajo = (trabajos) => {
 console.log("ofertasTraajo",trabajos)
     displayCards[0].innerHTML = trabajos.reduce( (html, oferta) => {

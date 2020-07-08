@@ -20,6 +20,8 @@ let jobsFiltered ;
 
 let items = Array.from(document.getElementsByClassName("item-tags"))
 console.log("hola",items)
+
+
 const funcionPrueba = () => {
   
  
@@ -51,13 +53,14 @@ const tags = (array) => {
 }
 
 const filtrar = (item) => {
-
+console.log("hola", item)
 if (filtros.indexOf(item) === -1) { 
   filtros.push(item) }
   else{
     filtros.splice(filtros.indexOf(item),1)
   }
  if(filtros === []){
+  modalContent.classList.remove("active");
    ofertasTrabajo(trabajos)
  }
 
@@ -83,7 +86,7 @@ console.log(jobsFiltered);
 
   
 
-  const trabajoNuevo = (job) => {
+const trabajoNuevo = (job) => {
   if(job.new) {
     return ` <span  class="item-badge item-badge__new">New!</span>`
   }else{
