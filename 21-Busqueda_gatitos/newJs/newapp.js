@@ -1,5 +1,3 @@
-
-
 //Menu Tabs
 const menu = document.querySelector("ul");
 const tabSection = document.querySelectorAll(".tab-section");
@@ -53,13 +51,25 @@ const tableBreedSearch = document.getElementById("breed-search-results");
 btnBuscadorRazas.addEventListener("click", () => {
     let inputSearch = inputBuscadorRazas.value;
 
-    buscadorRazas(inputSearch);
+    btnRedirect(inputSearch)
+    
 });
 
-inputBuscadorRazas.addEventListener('keyup', () => {
+inputBuscadorRazas.addEventListener('keyup', (e) => {
     
     searchBreedRT(inputBuscadorRazas.value);
+
+    if (e.keyCode === 13) {
+        event.preventDefault();
+        btnRedirect(inputBuscadorRazas.value)
+    }
+
 })
+//que input se vacie onload
+inputBuscadorRazas.addEventListener("load", () => {
+    inputBuscadorRazas.value = "";
+})
+
 
 /* SECCION FITROS */
 const filter = document.getElementById("filter");
@@ -70,52 +80,16 @@ const filterInput = document.querySelectorAll(".breed-filter");
 
 fIlterOptions.addEventListener("click", (e) => {
    
-    let target = e.target.id  //esto es el input
-    applyFilter(target)
-
+    let targetID = e.target.id  //esto es el input
+    let targetIfChecked = e.target.checked
+    
+    applyFilter(targetID, targetIfChecked)
 });
+
 //onload los inputs no esten tildados
 fIlterOptions.addEventListener("load",(e) => {
     console.log(e.target)
     e.target.checked = false;
 })
 
-
-let filterResults = [];
-const applyFilter = (idInput) => {
-  
-    let algo = breedFull.filter((cat) => {
-        
-     return cat[idInput] == 1
-    
-    })
-    console.log("qtiene algo", algo)
-
-     algo.reduce( (acc, item) => {
-        
-       
-        if(!filterResults.includes(item)){
-           filterResults.push(item)
-        }
-        else{
-           let index = filterResults.indexOf(item) 
-          
-           filterResults.splice(index,1)
-        
-        }
-
-        return acc
-    },[])
-
-    console.log("resl final", filterResults)
-
-    if(filterResults.length == 0){
-        displayFilterAll(breedFull)
-    }
-    
-        displayFilterAll(filterResults)
-    
-
-    // displayFilterAll(filterResults)
-}
 
