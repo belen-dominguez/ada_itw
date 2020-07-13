@@ -1,4 +1,4 @@
-//Menu Tabs
+///Menu Tabs
 const menu = document.querySelector("ul");
 const tabSection = document.querySelectorAll(".tab-section");
 
@@ -78,14 +78,17 @@ const fIlterOptions = document.getElementById("filter_content")
 const filterSearch = document.querySelectorAll(".checkbox");
 const filterInput = document.querySelectorAll(".breed-filter");
 const breedResult = document.getElementById("breed-results");
+const resultCounts = document.getElementById("breed-results-count")
 
 fIlterOptions.addEventListener("click", (e) => {
    
-    let targetID = e.target.id  //esto es el input
+    let targetID = e.target.id  //esto es el input value, ej: "hairless"
+
     let targetIfChecked = e.target.checked
     
-    applyFilter(targetID, targetIfChecked)
+     applyFilter(targetID, targetIfChecked)
 });
+
 
 //onload los inputs no esten tildados
 fIlterOptions.addEventListener("load",(e) => {
