@@ -116,7 +116,7 @@
     transform: scale(1.1);
   }
 
-  .flex {
+  #breed-results {
     display: flex;
     flex-wrap: wrap;
   }

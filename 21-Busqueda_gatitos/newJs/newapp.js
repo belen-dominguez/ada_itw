@@ -77,6 +77,7 @@ const imgFiltros = document.getElementsByClassName("imgFiltros");
 const fIlterOptions = document.getElementById("filter_content")
 const filterSearch = document.querySelectorAll(".checkbox");
 const filterInput = document.querySelectorAll(".breed-filter");
+const breedResult = document.getElementById("breed-results");
 
 fIlterOptions.addEventListener("click", (e) => {
    

@@ -88,15 +88,15 @@ const dropBreedDisplay = (data) => {
         `
     },"");
 
-    dropBreed[0].setAttribute('selected','selected');
+    optionSelected(dropBreed[0].value)   
 
 }
 
 const optionSelected = async (selected) => {
+   
 
     let data;
     let dataImg;
-
     if(selected.length > 4){
         const response = await fetch(`https://api.thecatapi.com/v1/breeds/${selected.value}`);
          data = await response.json();
@@ -135,8 +135,8 @@ const optionSelected = async (selected) => {
             `
         },"")
  }
-
-
+ 
+ 
 
 /* SECCION BUSCADOR RAZAS*/
 
@@ -181,7 +181,18 @@ const btnRedirect = (name) => {
 /* SECCION BUSCADOR FILTROS */
 
 
-const displayFilterAll2 =  async (data) => {
+// const getInfo = async () => {
+//     const response = await fetch("https://api.thecatapi.com/v1/breeds");
+//     const data = await response.json();
+//     return data
+// }
+
+// getInfo()
+//     .then(displayFilterAll)
+//     .then(applyFilter)
+
+
+const displayFilterAll =  async (data) => {
  
     if(typeof data === "undefined"){
        
@@ -189,10 +200,11 @@ const displayFilterAll2 =  async (data) => {
         const data = await response.json();
         
         
-        filter.innerHTML = data.reduce( (html, breed,i) => {
+        breedResult.innerHTML = data.reduce( (html, breed,i) => {
         
             return html + 
                 `
+                <div id="filter" class="column is-6 ">
                 <div class="card">
                     <div class="card-image ">
                     <figure  class="image is-4by3 imgFilter">
@@ -205,6 +217,7 @@ const displayFilterAll2 =  async (data) => {
                     <div class="card-content">
                     <p class="title is-5">${breed.name}</p>
                     </div>
+                </div>
                 </div>
                 `
             },"");
@@ -233,10 +246,11 @@ const displayFilterAll2 =  async (data) => {
             i++
         }
 
-        filter.innerHTML = breedFull.reduce( (html, breed,i) => {
+        breedResult.innerHTML = breedFull.reduce( (html, breed,i) => {
         
             return html + 
                 `
+                <div id="filter" class="column is-6 ">
                 <div class="card">
                     <div class="card-image ">
                     <figure  class="image is-4by3 imgFilter">
@@ -250,13 +264,14 @@ const displayFilterAll2 =  async (data) => {
                     <p class="title is-5">${breed.name}</p>
                     </div>
                 </div>
+                </div>
                 `
             },"");
     
     
     }
     else {
-
+    //esto es para extraer la data de breedFull, porq breedFull tiene las imagenes.
         let newResult = breedFull.reduce((acc, breedData) => {
 
               data.forEach(breed => {
@@ -268,7 +283,7 @@ const displayFilterAll2 =  async (data) => {
             return acc
        },[])
 
-        
+       
         filter.innerHTML = newResult.reduce( (html, breed,i) => {
     
             return html + 
@@ -292,7 +307,7 @@ const displayFilterAll2 =  async (data) => {
     }
  }
 
-displayFilterAll2()
+displayFilterAll()
 
 
 
@@ -312,8 +327,14 @@ displayFilterAll2()
          filterResults.push(search)
         console.log("filter on clck", filterResults)
 
+        result = filterResults.flat()
+            .map(i => i.id) //obtengo solo los ID
+            .map( (id, i, final) => final.indexOf(id) === i && i) //aca veo si hay id repetidos y me quedo con los indices y los "false" 
+            .filter(id => typeof id == "number") //elimino todo aquello que no sean numero (elimina los false)
+            .map(id => filterResults.flat()[id]) //agarro los objetos completos del array original
+
        
-        displayFilterAll2(filterResults.flat())
+        displayFilterAll(result.flat())
 
     }
     else {
@@ -327,13 +348,19 @@ displayFilterAll2()
                     console.log(filterResults)
                     let index = filterResults.indexOf(itemArr)
                     filterResults.splice(index,1)
-                    displayFilterAll2(filterResults.flat())
+                    displayFilterAll(filterResults.flat())
                 }
             }
         })
+
+        if(filterResults.length == 0){
+            displayFilterAll()
+         }
+
      }
 
-     if(filterResults.length == 0){
-        displayFilterAll2()
-     }
+     
 }
+
+
+
