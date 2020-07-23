@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/belen-dominguez/ada_itw/22-Recipe_card/static/css/main.dc46ee2e.chunk.css",
+    "main.js": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/main.136d39f1.chunk.js",
+    "main.js.map": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/main.136d39f1.chunk.js.map",
+    "runtime-main.js": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/runtime-main.85a7c761.js",
+    "runtime-main.js.map": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/runtime-main.85a7c761.js.map",
+    "static/js/2.adc62648.chunk.js": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/2.adc62648.chunk.js",
+    "static/js/2.adc62648.chunk.js.map": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/2.adc62648.chunk.js.map",
+    "index.html": "/belen-dominguez/ada_itw/22-Recipe_card/index.html",
+    "precache-manifest.6bf7912ea7816cbfab23a061cd5c49e7.js": "/belen-dominguez/ada_itw/22-Recipe_card/precache-manifest.6bf7912ea7816cbfab23a061cd5c49e7.js",
+    "service-worker.js": "/belen-dominguez/ada_itw/22-Recipe_card/service-worker.js",
+    "static/css/main.dc46ee2e.chunk.css.map": "/belen-dominguez/ada_itw/22-Recipe_card/static/css/main.dc46ee2e.chunk.css.map",
+    "static/js/2.adc62648.chunk.js.LICENSE.txt": "/belen-dominguez/ada_itw/22-Recipe_card/static/js/2.adc62648.chunk.js.LICENSE.txt",
+    "static/media/01.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/01.8af3ced1.jpg",
+    "static/media/02.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/02.4d39d9d8.jpg",
+    "static/media/03.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/03.0f13be35.jpg",
+    "static/media/04.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/04.6527d1c1.jpg",
+    "static/media/05.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/05.383ca1f9.jpg",
+    "static/media/06.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/06.b32e16ac.jpg",
+    "static/media/07.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/07.12325b19.jpg",
+    "static/media/08.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/08.d22712c7.jpg",
+    "static/media/09.jpg": "/belen-dominguez/ada_itw/22-Recipe_card/static/media/09.bd78f897.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85a7c761.js",
+    "static/js/2.adc62648.chunk.js",
+    "static/css/main.dc46ee2e.chunk.css",
+    "static/js/main.136d39f1.chunk.js"
+  ]
+}
